@@ -1,0 +1,240 @@
+/* GERAL */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--azul);
+}
+main{
+    background-color: #ebe6de;
+}
+.amarelo {
+    color: var(--amarelo);
+    font-weight: bold;
+}
+:root {
+    --escuro: #012745;
+    --azul: #0f4b72;
+    --amarelo: #da9f2e;
+}
+a:hover{
+    text-decoration: none;
+}
+
+a{
+    color: #0f4b72cf;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    padding: 30px;
+    transition: 1s;
+}
+
+header.large{
+    padding: 30px;
+    transition: 1s;
+}
+
+#logo.large{
+    width: 200px;
+    transition: 1s;
+}
+
+header.small{
+    padding: 0px;
+    transition: 1s;
+}
+
+#logo.small{
+    width: 100px;
+    transition: 1s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0f4b72cf;
+}
+
+#lista {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* menu */
+.dropdown-menu{
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background-color: var(--escuro);
+    color: var(--amarelo);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    box-shadow: 0 -2px 25px -1px #333;
+    z-index: 5000;
+}
+
+footer a{
+    color: white;
+}
+
+#footerEsquerda {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 50px;
+}
+
+#footerCentro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+#footerDireita {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer img {
+    width: 35%;
+}
+
+#footerCopy {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: small;
+    padding: 0;
+    text-align: center;
+}
+
+#footerCopy p {
+    margin: 0;
+}
+
+#facebook,
+#instagram {
+    color: #ffffff;
+}
+
+#whatsapp {
+    color: #25d366;
+}
+
+#whatsapp:hover {
+    color: #128c7e;
+}
+
+svg {
+    width: 15%;
+}
+
+/* duvidas */
+#interrogacao {
+    background-color: #da9f2e;
+    position: fixed;
+    z-index: 5000;
+    bottom: 400px;
+    left: 0;
+    border-radius: 0 30px 30px 0;
+    transition: 1s;
+}
+
+#interrogacao2 {
+    background-color: #da9f2e;
+    position: fixed;
+    z-index: 5000;
+    bottom: 400px;
+    left: 0;
+    border-radius: 0 30px 30px 0;
+    display: none;
+    transition: 1s;
+}
+
+
+/* css responsivo footer */
+@media only screen and (max-width: 720px) {
+    main{
+        padding-bottom: 50px;
+    }
+    .colchete{
+        display: none;
+    }
+    footer {
+        background-color: var(--escuro);
+        color: var(--amarelo);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 -2px 25px -1px #333;
+        z-index: 5000;
+    }
+    
+    footer a{
+        color: white;
+    }
+    
+    #footerEsquerda {
+        display: none;
+    }
+    
+    #footerCentro {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    #footerDireita {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer img {
+        width: 80%;
+    }
+    
+    #footerCopy {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: small;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #footerCopy p {
+        margin: 0;
+    }
+    
+    #facebook,
+    #instagram {
+        color: #ffffff;
+    }
+    
+    #whatsapp {
+        color: #25d366;
+    }
+    
+    #whatsapp:hover {
+        color: #128c7e;
+    }
+    
+    svg {
+        width: 60px;
+        padding-right: 10px;
+    }
+
+  }
+
