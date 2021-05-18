@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/headerFooter.css">
     <title>Matheus Freire Fisioterapeuta</title>
-    <style>
-        
-    </style>
-
-
-
 </head>
 
 <body>
@@ -38,7 +32,8 @@
                         </li>
 
                         <li class="nav-item dropdown ">
-                            <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Fisioterapia
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -57,11 +52,11 @@
 
         <main class="p-md-5 ">
             <div class="row">
-                <h1 id="topo" class="text-center col-12 pb-5"><span id="duvida1" class="amarelo">[</span> Principais Dúvidas
+                <h1 id="topo" class="text-center col-12 pb-5"><span id="duvida1" class="amarelo">[</span> Principais
+                    Dúvidas
                     <span class="amarelo">]</span>
                 </h1>
                 <aside class="menuLateral col-md-4  mb-5 sidebar">
-    
                     <ul class="nav nav-sidebar list-group list-group-flush">
                         <li class="list-group-item bg-transparent">
                             <a href="#topo">O que é Fisioterapia?</a>
@@ -88,8 +83,7 @@
                             <a href="#duvida7">Pra quem é indicado o Programa Terapêutico Preventivo?</a>
                         </li>
                     </ul>
-    
-    
+
                     <div class="text-center">
                         <h4 class="mt-5 pb-3"><span class="amarelo">[</span> Mais dúvidas? <span
                                 class="amarelo">]</span></h4>
@@ -99,16 +93,16 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 Clique aqui para escrever
                             </button>
-                            <form class="dropdown-menu p-4 col-12" >
+                            <form name="formulario" class="dropdown-menu p-4 col-12">
                                 <div class="form-group">
                                     <label class="sr-only" for="nome">Nome</label>
                                     <input type="text" class="form-control" id="nome" placeholder="Nome">
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="cpf">CPF ou CNPJ</label>
-                                    <input type="text" class="form-control" id="cpf"
-                                        placeholder="CPF/CNPJ (apenas números)">
+                                    <label class="sr-only" for="cpf_cnpj">CPF ou CNPJ</label>
+                                    <input type="text" class="form-control" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF/CNPJ" onblur="validarCPF()" required>
                                 </div>
+                                <div class="row col-md-12" id="cpfTxt"></div>
                                 <div class="form-group">
                                     <label class="sr-only" for="email">E-mail</label>
                                     <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
@@ -121,72 +115,82 @@
                                 </div>
                                 <div class="text-right">
                                     <button type="submit" class="btn btn-dark mt-3"">Enviar</button>
-                                </div>
-                                
+                                </div>                                
                             </form>
                         </div>
-                        
                     </div>
-    
                 </aside>
     
-                <section class="col-md-8 duvidas px-5">
-    
+                <section class=" col-md-8 duvidas px-5">
                     <article class="duvidasTexto">
                         <h3 class="pb-3">
-                            <span id="duvida1" class="amarelo">[</span> O que é Fisioterapia? <span class="amarelo">]</span>
+                            <span id="duvida1" class="amarelo">[</span> O que é Fisioterapia? <span
+                                class="amarelo">]</span>
                         </h3>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitiaofficia numquam laudantium
-                            ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, advoluptatibus veniam,
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                            mollitiaofficia numquam laudantium
+                            ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta,
+                            advoluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.
                         </p>
-                       
+
                         <div class="text-right">
                             <a href="#topo">
-                                <span class="amarelo">[</span> Voltar ao Topo<span class="amarelo">]</span>
+                                <span class="amarelo">[</span> Voltar ao Topo<span
+                                    class="amarelo">]</span>
                             </a>
                         </div>
                         <hr class="my-3">
                     </article>
-    
+
                     <article class="duvidasTexto">
                         <h3 class="pb-3">
-                            <span id="duvida2" class="amarelo">[</span> Quando devo buscar um Fisioterapeuta?<span class="amarelo">]</span>
+                            <span id="duvida2" class="amarelo">[</span> Quando devo buscar um
+                            Fisioterapeuta?<span class="amarelo">]</span>
                         </h3>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitiaofficia numquam laudantium
-                            ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, advoluptatibus veniam,
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                            mollitiaofficia numquam laudantium
+                            ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta,
+                            advoluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.
                         </p>
-                       
+
                         <div class="text-right">
                             <a href="#topo">
-                                <span class="amarelo">[</span> Voltar ao Topo<span class="amarelo">]</span>
+                                <span class="amarelo">[</span> Voltar ao Topo<span
+                                    class="amarelo">]</span>
                             </a>
                         </div>
                         <hr class="my-3">
                     </article>
-    
+
                     <article class="duvidasTexto">
                         <h3 class="pb-3">
-                            <span id="duvida3" class="amarelo">[</span> O que é Osteopatia?<span class="amarelo">]</span>
+                            <span id="duvida3" class="amarelo">[</span> O que é Osteopatia?<span
+                                class="amarelo">]</span>
                         </h3>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitiaofficia numquam laudantium
-                            ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, advoluptatibus veniam,
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                            mollitiaofficia numquam laudantium
+                            ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta,
+                            advoluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.
                         </p>
-                       
+
                         <div class="text-right">
                             <a href="#topo">
-                                <span class="amarelo">[</span> Voltar ao Topo<span class="amarelo">]</span>
+                                <span class="amarelo">[</span> Voltar ao Topo<span
+                                    class="amarelo">]</span>
                             </a>
                         </div>
                         <hr class="my-3">
                     </article>
+
                     <article class="duvidasTexto">
-                        <h3 class="pb-3"><span id="duvida4" class="amarelo">[</span> Quais os benefícios
+                        <h3 class="pb-3"><span id="duvida4" class="amarelo">[</span> Quais os
+                            benefícios
                             da Osteopatia?
                             <span class="amarelo">]</span>
                         </h3>
@@ -195,7 +199,8 @@
                             ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad
                             voluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque
+                            at
                             obcaecati
                         </p>
                         <div class="text-right">
@@ -204,6 +209,7 @@
                         </div>
                         <hr class="my-3">
                     </article>
+
                     <article class="duvidasTexto">
                         <h3 class="pb-3"><span id="duvida5" class="amarelo">[</span> A Osteopatia é
                             idicada para que tipos
@@ -213,7 +219,8 @@
                             ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad
                             voluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque
+                            at
                             obcaecati
                         </p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia
@@ -221,7 +228,8 @@
                             ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad
                             voluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque
+                            at
                             obcaecati
                         </p>
                         <div class="text-right">
@@ -230,6 +238,7 @@
                         </div>
                         <hr class="my-3">
                     </article>
+
                     <article class="duvidasTexto">
                         <h3 class="pb-3"><span id="duvida6" class="amarelo">[</span> O que é
                             Quiropraxia? <span class="amarelo">]</span></h3>
@@ -238,17 +247,20 @@
                             ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad
                             voluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque
+                            at
                             obcaecati
                         </p>
                         <div class="text-right">
-                            <a href="#topo"><span  class="amarelo">[</span> Voltar ao Topo
+                            <a href="#topo"><span class="amarelo">[</span> Voltar ao Topo
                                 <span class="amarelo">]</span></a>
                         </div>
                         <hr class="my-3">
                     </article>
+
                     <article class="duvidasTexto">
-                        <h3 class="pb-3"><span id="duvida7" class="amarelo">[</span> Quais os benefícios
+                        <h3 class="pb-3"><span id="duvida7" class="amarelo">[</span> Quais os
+                            benefícios
                             da Quiropraxia?
                             <span class="amarelo">]</span>
                         </h3>
@@ -257,7 +269,8 @@
                             ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad
                             voluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque
+                            at
                             obcaecati
                         </p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia
@@ -265,7 +278,8 @@
                             ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad
                             voluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque
+                            at
                             obcaecati
                         </p>
                         <div class="text-right">
@@ -274,8 +288,10 @@
                         </div>
                         <hr class="my-3">
                     </article>
+
                     <article class="duvidasTexto">
-                        <h3 class="pb-3"><span id="duvida8" class="amarelo">[</span> Pra quem é indicado
+                        <h3 class="pb-3"><span id="duvida8" class="amarelo">[</span> Pra quem é
+                            indicado
                             o Programa
                             Terapêutico Preventivo? <span class="amarelo">]</span></h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia
@@ -283,7 +299,8 @@
                             ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad
                             voluptatibus veniam,
                             doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque
+                            at
                             obcaecati
                         </p>
                         <div class="text-right">
@@ -292,9 +309,7 @@
                         </div>
                     </article>
                 </section>
-            </div>
-            
-
+            </div>    
         </main>
 
         <footer>
@@ -372,16 +387,10 @@
                 </a>
                 <br>
                 <div>
-                    <img src="imagens/qrcode.PNG"  style="width: 80px;" alt="">
+                    <img src="imagens/qrcode.PNG" style="width: 80px;" alt="">
                 </div>
-                
             </div>
-
-
-
-
         </footer>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -399,6 +408,36 @@
                 $("#logo").removeClass("small").addClass("large");
             }
         });
+
+        function validarCPF() {
+        let digitado = document.forms.formulario.cpf_cnpj.value;
+        let cpfValido = /^(([0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}))$/;
+        let cnpjValido = /^(([0-9]{2}.[0-9]{3}.[0-9]{3}\/0001-[0-9]{2}))$/
+    
+        if (cpfValido.test(digitado) == false || cnpjValido.test(digitado) == false) {
+            digitado = digitado.replace(/\D/g, "");
+    
+            if (digitado.length == 11) {
+                digitado = digitado.replace(/(\d{3})(\d)/, "$1.$2"); 
+                digitado = digitado.replace(/(\d{3})(\d)/, "$1.$2");
+                digitado = digitado.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    
+                document.getElementById("cpf_cnpj").value = digitado;
+    
+            } else if (digitado.length == 14) {
+                digitado = digitado.replace(/(\d{2})(\d)/, "$1.$2"); 
+                digitado = digitado.replace(/(\d{3})(\d)/, "$1.$2"); 
+                digitado = digitado.replace(/(\d{3})(\d)/, "$1/$2");
+                digitado = digitado.replace(/(0001)(\d{1,2})$/, "$1-$2");
+
+                document.getElementById("cpf_cnpj").value = digitado;
+
+            } else { 
+                alert("CPF ou CNPJ inválido, digite novamente");
+                document.forms.formulario.cpf_cnpj.value = "";
+            }
+        }
+    };
 
     </script>
 </body>

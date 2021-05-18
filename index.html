@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!-- REQUISITO Jquery: seta
+    index.html (linhas 338 a 344)
+
+REQUISITO JavaScript: 
+    duvidas.html  (linhas 412 a 440)
+
+REQUISITO Css: RODAPÉ
+    headerFooter.css (linhas 73 a 141)
+
+REQUISITO HTML: Utilizar <aside> e <article>
+    aside: duvidas.html (linhas 59 a 122) | article: duvidas.html (linhas 125 a 145)  
+         
+Requisitos BootStrap:
+Layout responsivo usando grid
+    index.html (linhas 159 a 169)
+
+formulário 
+    duvidas.html (linhas 96 a 119)
+
+Menu drop-down/nav-bar responsivo
+    index.html: menu (linhas 74 a 108) | drop-down (linhas 92 a 100) | nav-bar (linhas 75 a 107)
+
+Estilo nos botões e texto 
+    Texto: index.html - estilização do h1 (linha 122) | Botão: duvidas.html - estilização do botão que abre o formulario dropdown (linha 92)
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +63,6 @@
             /* display: none; */
         }
         
-
         #imgLesoes, #imgTratamentos, #imgCalendario{
             display: none;
         }
@@ -64,7 +89,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="sobre.html">Sobre Mim</a>
                         </li>
-
                         <li class="nav-item dropdown ">
                             <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Fisioterapia
@@ -82,7 +106,6 @@
                 </div>
             </nav>
         </header>
-
 
         <main class="p-md-5">
             <section id="topo" class="carrossel mb-5">
@@ -127,7 +150,6 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-
             </section>
 
             <section class="sobre row m-md-5 p-md-5 align-bottom d-flex align-items-center">
@@ -142,11 +164,9 @@
                     <br>
                     <p>Nesta ideia, trago, de maneira HUMANIZADA e INTEGRATIVA, a conscientização de mudanças de hábitos rotineiros, ato FUNDAMENTAL para se alcançar RESULTADOS excelentes.</p>
                     <br>
-                    <p>Com isso busco transmitir alegria e sorrisos, fazendo com que pessoas como VOCÊ vivam de forma mais feliz e saudável, SEM precisar recorrer a remédios, cirurgias e demais meios que desenvolva sofrimento e outras dependências.</p>
-                        
+                    <p>Com isso busco transmitir alegria e sorrisos, fazendo com que pessoas como VOCÊ vivam de forma mais feliz e saudável, SEM precisar recorrer a remédios, cirurgias e demais meios que desenvolva sofrimento e outras dependências.</p>                        
                 </article>
             </section>
-
 
             <section class="fisioterapia pb-5">
                 <h1 class="text-center p-5"><span class="amarelo">[</span> Fisioterapia <span class="amarelo">]</span>
@@ -197,10 +217,7 @@
                     </h1></a>
                     <p>Confira a disponibilidade da minha agenda e marque seu atendimento!</p>
                 </article>
-
-                
             </section>
-
         </main>
 
         <!-- abrir duvidas -->
@@ -222,6 +239,7 @@
 
             <a href="#topo"><img src="imagens/seta.png" width="15%" alt=""></a>
         </div>
+
 
         <footer>
             <div id="footerEsquerda">
@@ -252,7 +270,6 @@
                 <a href="#topo">
                     <h6><span class="amarelo">[</span> Voltar ao topo <span class="amarelo">]</span></h6>
                 </a>
-
             </div>
 
             <div id="footerCentro">
@@ -263,7 +280,6 @@
                         Ibiapina / CE, Brasil </p>
                     <h6>[ Telefone ]</h6>
                     <p>+55 88 99801.4042</p>
-
                 </div>
                 <hr>
                 <div id="footerCopy">
@@ -300,23 +316,16 @@
                 <div>
                     <img src="imagens/qrcode.PNG"  style="width: 80px;" alt="">
                 </div>
-                
             </div>
-
-
-
-
         </footer>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-
     <script type="text/javascript">
-        $(document).on("scroll", function () {
+        $(document).on("scroll", function () { //função para diminuir menu quando abaixa a pagina
             if ($(document).scrollTop() > 0) {
                 $("header").removeClass("large").addClass("small");
                 $("#logo").removeClass("large").addClass("small");
@@ -326,7 +335,7 @@
             }
         });
 
-        $(document).on("scroll", function () {
+        $(document).on("scroll", function () { //função para mostra a seta
             if ($(document).scrollTop() > 400) {
                 $("#seta").show(1000);
             } else {
@@ -334,7 +343,7 @@
             }
         });
 
-        $(function () {
+        $(function () { //função para mostrar a aba de dúvidas
             $("#interrogacao").mouseover(function () {
                 $("#interrogacao2").show(100);
             });
@@ -344,7 +353,7 @@
             });
         });
 
-        $(document).on("scroll", function () {
+        $(document).on("scroll", function () { //função para mostrar as imagens dos cards da fisioterapia
             if ($(document).scrollTop() > 1500) {
                 $("#imgLesoes").show(2000);
                 $("#imgTratamentos").show(2000);
@@ -353,13 +362,6 @@
                 $("#imgTratamentos").hide(2000);
             }
         });
-
-        // $(function () {
-        //     if ($(".carousel-item") = "active") {
-        //         $(".legenda").show(2000);
-        //     }
-        // });
-
     </script>
 </body>
 
