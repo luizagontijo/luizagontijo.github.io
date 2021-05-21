@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .footer-content{
+    color: black;
+    background: white;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+.footer-content{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+}
+
+.footer-content p{
+    color: white;
+    max-width: 100%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size:14px;
+}
+
+.footer-content ul li{
+    list-style: none;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    color:white;
+}
+
+/* css responsivo footer */
+@media only screen and (max-width: 720px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+
+<div class="footer-content">
+    <img src="imagens/logoBranca.png" width="30%">
+    <ul>
+        <li>
+            <img src="imagens/seta.png" width="8%"> R. Cel Wenceslau Soares, Centro
+            <hr></br>
+            <img src="imagens/seta.png" width="8%"> matheusfreirecarv@gmail.com
+            <hr></br>
+            <img src="imagens/seta.png" width="8%">  (88) 99801-4042
+        </li>
+    </ul>
+    <ul class="socials">
+        <li><a href="https://www.facebook.com/Matheus-Freire-113189996720479/"><img  src="imagens/seta.png" width="8%"></a></li>
+        <li><a href="https://www.instagram.com/matheus.freirec/?igshid=5fr1i0e4ymd6&fbclid=IwAR2WrmnRUluw8EQNv7VxtWOCImPR1M8KO-SCzb42xc_GrfgX2MYRdVqdHHI"><img src="imagens/seta.png" width="8%"></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5588998014042"><img src="imagens/seta.png" width="8%"></a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

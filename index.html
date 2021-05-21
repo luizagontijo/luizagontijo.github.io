@@ -66,6 +66,19 @@ Estilo nos botões e texto
         #imgLesoes, #imgTratamentos, #imgCalendario{
             display: none;
         }
+
+        @media only screen and (max-width: 992px) {
+            #fotoSobre{
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            #fotoSobre{
+                width: 100%;
+            }
+        }
+  
     </style>
 </head>
 
@@ -119,7 +132,7 @@ Estilo nos botões e texto
                         <div class="carousel-item active">
                             <img class="d-block w-100 mb-5" src="imagens/car1.png" alt="First slide">
                             <div class="carousel-caption d-none d-md-block p-5">
-                                <h1 class="legenda"><span class="amarelo">[</span> Tratamento Humano e Integrado <span class="amarelo">]</span> <br>
+                                <h1 class="legenda"><span class="amarelo">[</span>Tratamento Humano e Integrado<span class="amarelo">]</span> <br>
                                     <small >Matheus Freire Carvalho -CREFITO 274122-F </small>
                                 </h1>
                             </div>
@@ -127,15 +140,15 @@ Estilo nos botões e texto
                         <div class="carousel-item">
                             <img class="d-block w-100 mb-5" src="imagens/car2.png" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block p-5">
-                                <h1 class="legenda"><span class="amarelo">[</span> Qualidade de vida e bons resultados<span class="amarelo">]</span> <br>
-                                    <small ><span class="amarelo">[</span> Sem dores e sem medicação<span class="amarelo">]</span> </small>
+                                <h1 class="legenda"><span class="amarelo">[</span>Qualidade de vida e bons resultados<span class="amarelo">]</span> <br>
+                                    <small ><span class="amarelo">[</span>Sem dores e sem medicação<span class="amarelo">]</span> </small>
                                 </h1>
                             </div>
                         </div>
                         <div class="carousel-item mb-5">
                             <img class="d-block w-100" src="imagens/car3.png" alt="Third slide">
                             <div class="carousel-caption d-none d-md-block p-5">
-                                <h1 class="legenda"><span class="amarelo">[</span> Matheus Freire Carvalho<span class="amarelo">]</span>  <br>
+                                <h1 class="legenda"><span class="amarelo">[</span>Matheus Freire Carvalho<span class="amarelo">]</span>  <br>
                                     <small >Fisioterapeuta Especialista em COLUNA VERTEBRAL e LESÕES ESPORTIVAS.</small>
                                 </h1>
                             </div>
@@ -152,12 +165,12 @@ Estilo nos botões e texto
                 </div>
             </section>
 
-            <section class="sobre row m-md-5 p-md-5 align-bottom d-flex align-items-center">
-                <article class="sobreFoto col-md-5 p-md-3 ">
-                    <img src="imagens/matheus.jpg" class="rounded img-fluid " width="100%" alt="">
+            <section class="sobre row m-0 m-md-5 p-md-5 align-bottom d-flex align-items-center">
+                <article class="sobreFoto col-lg-5 p-md-3 mt-3">
+                    <img src="imagens/matheus.jpg" class="rounded img-fluid" id="fotoSobre" alt="">
                 </article>
-                <article class="sobreTexto col-md-7 p-5 lead">
-                    <a href="sobre.html"><h1 class="mb-3"><span class="amarelo">[ Sobre Mim ]</span>
+                <article class="sobreTexto col-lg-7 p-5 lead">
+                    <a href="sobre.html"><h1 class="mb-3"><span class="amarelo">[Sobre Mim]</span>
                     </h1></a>
                     <br>
                     <p>Me chamo Matheus Freire Carvalho e faço parte de um conceito profissional que TRANSFORMA VIDAS, ajudando as pessoas a conquistar qualidade de vida e a VIVER sem dor! </p>
@@ -169,15 +182,14 @@ Estilo nos botões e texto
             </section>
 
             <section class="fisioterapia pb-5">
-                <h1 class="text-center p-5"><span class="amarelo">[</span> Fisioterapia <span class="amarelo">]</span>
+                <h1 class="text-center p-5"><span class="amarelo">[</span>Fisioterapia<span class="amarelo">]</span>
                 </h1>
                 <div class="card-deck ">
                     <div class="card bg-light mx-5 p-md-3 w-75">
                         <a class="text-dark" href="tratamentos.html">
                             <div class="card-body text-center">
-                                <div class="card-header">
-                                    <h3 class="p-3"><span class="amarelo">[</span> Serviços <span
-                                            class="amarelo">]</span></h3>
+                                <div class="card-header px-0">
+                                    <h3 class="py-3"><span class="amarelo">[</span>Serviços<span class="amarelo">]</span></h3>
                                 </div>
                                 <div class="card-text p-3">
                                     <img id="imgTratamentos" src="imagens/tratamento.png" width="60%" alt="">
@@ -189,8 +201,8 @@ Estilo nos botões e texto
                     <div class="card bg-secondary mx-5 p-md-3 w-75">
                         <a class="text-white" href="lesoes.html">
                             <div class="card-body text-center ">
-                                <div class="card-header">
-                                    <h3 class="p-3"><span class="amarelo">[</span> Lesões <span class="amarelo">]</span>
+                                <div class="card-header px-0">
+                                    <h3 class="py-3"><span class="amarelo">[</span>Lesões<span class="amarelo">]</span>
                                     </h3>
                                 </div>
                                 <div class="card-text p-3">
@@ -202,9 +214,9 @@ Estilo nos botões e texto
                 </div>
             </section>
 
-            <section class="marcar row m-md-5 p-md-5 align-bottom d-flex align-items-center">
+            <section class="marcar row m-0 m-md-5 p-md-5 align-bottom d-flex align-items-center">
                 <article  class="marcarCalendario col-md-5 p-3">
-                    <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-week"
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-week py-3"
                         viewBox="0 0 16 16">
                         <path
                             d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
@@ -213,7 +225,7 @@ Estilo nos botões e texto
                     </svg>
                 </article>
                 <article class="marcarTexto col-md-7 p-5 lead">
-                    <a href="contato.html"><h1 class="mb-5"><span class="amarelo">[ Marque sua consulta! ]</span>
+                    <a href="contato.html"><h1 class="mb-5"><span class="amarelo">[Marque sua consulta!]</span>
                     </h1></a>
                     <p>Confira a disponibilidade da minha agenda e marque seu atendimento!</p>
                 </article>
@@ -268,7 +280,7 @@ Estilo nos botões e texto
                 </ul>
                 <br>
                 <a href="#topo">
-                    <h6><span class="amarelo">[</span> Voltar ao topo <span class="amarelo">]</span></h6>
+                    <h6><span class="amarelo">[</span>Voltar ao topo<span class="amarelo">]</span></h6>
                 </a>
             </div>
 
@@ -354,7 +366,7 @@ Estilo nos botões e texto
         });
 
         $(document).on("scroll", function () { //função para mostrar as imagens dos cards da fisioterapia
-            if ($(document).scrollTop() > 1500) {
+            if ($(document).scrollTop() > 1000) {
                 $("#imgLesoes").show(2000);
                 $("#imgTratamentos").show(2000);
             } else {

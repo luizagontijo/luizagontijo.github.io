@@ -236,5 +236,20 @@ svg {
         padding-right: 10px;
     }
 
+    /* duvidas */
+#interrogacao {
+   
+    bottom: 200px;
+    left: 0;
+    border-radius: 0 30px 30px 0;
+    transition: 1s;
+}
+
+#interrogacao2 {
+    
+    bottom: 200px;
+    
+}
+
   }
 
