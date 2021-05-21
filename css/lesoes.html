@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <title>Matheus Freire Fisioterapeuta</title>
+    <style>
+        .textoCard {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .modal {
+            z-index: 3000;
+        }
+        @media only screen and (max-width: 750px) {
+            .nomeBotao{
+                font-size: 1.5rem;
+            }
+        }
+
+         @media only screen and (max-width: 650px) {
+            .nomeBotao{
+                font-size: 1.25rem;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .nomeBotao{
+                font-size: 1rem;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            .nomeBotao{
+                font-size: 2rem;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid my-0 navbar-light shadow px-0 bg-white rounded">
+        <header class="shadow bg-white">
+            <nav class="navbar navbar-expand-md  ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand mr-5" href="index.html">
+                    <img id="logo" width="200px" src="imagens/logo.png" alt="">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <img class="colchete" src="imagens/esquerda.png" height="50px" alt="">
+                    <ul id="lista" class="navbar-nav mr-auto mt-2 mt-lg-0 font-weight-bold lead">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre Mim</a>
+                        </li>
+
+                        <li class="nav-item dropdown  active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Fisioterapia
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="tratamentos.html">Serviços</a>
+                                <a class="dropdown-item" href="lesoes.html">Lesões<span class="sr-only">(Página
+                                        atual)</span></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Marcar Consulta</a>
+                        </li>
+                    </ul>
+                    <img class="colchete" src="imagens/direita.png" height="50px" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <main class="p-5">
+            <h1 id="topo" class="text-center mb-5"><span class="amarelo">[</span>Lesões<span class="amarelo">]</span></h1>
+            <div class="card-deck p-5" id="topo">
+                <div class="card shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal1"><h3 class="nomeBotao py-3">Coluna</h3></button>
+                    </div>
+                </div>
+                <div class="card shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal2"><h3 class="nomeBotao py-3">Quadril</h3></button>
+                    </div>
+                </div>
+                <div class="card shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal3"><h3 class="nomeBotao py-3">Joelho</h3></button>
+                    </div>
+                </div>
+                <div class="card shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal4"><h3 class="nomeBotao py-3">Tornozelo</h3></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck p-5">
+                <div class="card  shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal5"><h3 class="nomeBotao py-3">Ombro</h3></button>
+                    </div>
+                </div>
+                <div class="card shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal6"><h3 class="nomeBotao py-3">Cotovelo</h3></button>
+                    </div>
+                </div>
+                <div class="card shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal7"><h3 class="nomeBotao py-3">Punho</h3></button>
+                    </div>
+                </div>
+                <div class="card shadow px-0 bg-white rounded">
+                    <img class="card-img-top my-3" src="imagens/lesao.png" alt="Card image">
+                    <div class="textoCard card-img-overlay px-1">
+                        <button type="button" class="btn btn-ligth p-0" data-toggle="modal"
+                            data-target="#myModal8"><h3 class="nomeBotao py-3">Pescoço</h3></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Coluna <span class="amarelo">]</span>
+                            </h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+                                <p>
+                                    Devido a grande extensão da coluna vertebral, vamos dividir os tipos de fraturas em
+                                    duas
+                                    partes: Traumatismos na coluna cervical e traumatismos na coluna toracolombar.
+                                    <br><br>
+                                    1) Traumatismos na coluna cervical: As lesões nessa região podem ocorrer em uma
+                                    série de
+                                    diferentes mecanismos de trauma, desde pequenas quedas de altura até grandes
+                                    acidentes
+                                    de trânsito. Coluna cervical alta: Nesse segmento da coluna cervical encontramos
+                                    cinco
+                                    tipos de lesões.
+                                    <br>
+                                    A) Fraturas do côndilo occipital: Em geral, esse tipo de fratura é causado por
+                                    acidentes
+                                    envolvendo traumas de alta energia, tais como acidentes automobilísticos e acidentes
+                                    ocorridos na pratica esportiva. Em função dos tipos de fatores causais, geralmente
+                                    são
+                                    acometidos indivíduos jovens, na segunda e na terceira décadas da vida,
+                                    principalmente
+                                    os do sexo masculino. Apresentam-se 3 grupos de fraturas do côndilo occipital. Em um
+                                    primeiro grupo (tipo I), observa-se fratura impactada do côndilo occipital, tendo
+                                    como
+                                    mecanismo de trauma a carga axial do crânio sobre o atlas. Em um segundo grupo (tipo
+                                    II), tem-se a fratura do côndilo occipital como parte de uma fratura da base do
+                                    crânio,
+                                    tendo como causa o trauma direto regional. O terceiro grupo (tipoIII) traz a fratura
+                                    -
+                                    avulsão do côndilo
+                                    <br>
+                                    B) Occipital pelo ligamento alar, causada por rotação ou inclinação lateral da
+                                    cabeça ou
+                                    pela associação dos dois movimentos.
+                                    <br>
+                                    C) O tratamento mais indicado para casos tipo I ou II, é o uso do colar tipo
+                                    Philadelphia. Já para casos tipo III, usa-se uma imobilização mais rígida, com
+                                    halogesso
+                                    ou gesso tipo Minerva.
+                                    <br>
+                                    D) Fraturas do atlas: Uma compressão axial (vertical) do crânio sobre o atlas força-
+                                    o
+                                    sobre o axis, determinando a ruptura do arco anterior e posterior. O tratamento mais
+                                    indicado é a redução por tração craniana e imobilização por três a quatro meses.
+                                    Caso
+                                    haja ruptura do ligamento transverso, será necessária a artrodese occipito cervical
+                                    imediato.
+                                    <br>
+                                    E) Luxações C1 e C2 : Esse tipo de lesão é rara uma vez que só é possível devido a
+                                    um
+                                    violento mecanismo de flexão com ruptura do ligamento transverso, causando um
+                                    traumatismo medular geralmente incompatível com a vida. O tratamento nesse tipo de
+                                    lesão
+                                    será sempre cirúrgico. Após a redução são feitos o amarrilho metálico e a artrodese
+                                    entre os arcos posteriores de C1 e C2.
+                                    <br>
+                                    F) Fraturas do dente do axis: Nessa de lesão são encontradas 3 tipos de fraturas:
+                                    <br>
+                                    * Tipo I: Fratura do ápice do dente do axis, e não apresentam problemas quanto a
+                                    consolidação.
+                                    <br>
+                                    * Tipo II: Fratura da base do dente do axis, e geralmente são as mais difíceis de se
+                                    consolidar.
+                                    <br>
+                                    * Tipo III: Fratura atingindo o corpo do axis, e costuma se se consolidar bem. O
+                                    tratamento consiste na redução, geralmente por tração e imobilização, que no tipo II
+                                    deverá ir até 5 meses ou mais.
+                                    <br><br>
+                                    G) Fratura do enforcado: Também chamado de espondilolistese traumática do axis, é a
+                                    fratura típica por hiperextensão-distração, na qual há fratura dos pedículos de C2
+                                    com
+                                    deslizamento do corpo dessa vértebra sobre o C3. O tratamento consiste na redução
+                                    por
+                                    tração seguida de imobilização com aparelho gessado do tipo Minerva por três meses.
+                                    <br><br>
+                                    Coluna cervical baixa: Basicamente as lesões podem ser de 6 tipos:
+                                    <br>
+                                    A) Compressão - flexão
+                                    <br>
+                                    B) Compressão vertical
+                                    <br>
+                                    C) Distração - flexão
+                                    <br>
+                                    D) Compressão - extensão
+                                    <br>
+                                    E) Distração - extensão
+                                    <br>
+                                    F) Flexão lateral
+                                    <br><br>
+                                    As lesões traumáticas da coluna cervical exigem tratamento de urgência porque podem
+                                    ser
+                                    determinantes de lesão medular ou podem causá -las posteriormente, o que pode
+                                    resultar
+                                    em gravíssimas e definitivas incapacidades para o paciente. O tratamento visará
+                                    reduzir
+                                    a fratura ou luxação através da redução mediante a tração com halo craniano.
+                                    <br>
+                                    2) Traumatismo da Coluna Toracolombar: As fraturas da coluna torácica e lombar são
+                                    as
+                                    mais freqüentes do esqueleto axial e correspondem a cerca de 89% das fraturas da
+                                    coluna
+                                    vertebral, e basicamente podem ser de dois tipos:
+                                    <br>
+                                    A) Fraturas dos processos transversos lombares
+                                    <br>
+                                    B) Fraturas dos processos espinhosos torácicos Essas fraturas constituem lesões
+                                    banais.
+                                    <br><br>
+                                    Acompanham-se de desconforto o qual exige repouso para permitir a absorção do
+                                    exsudato
+                                    hemorrágico, passando -se em seguida à atividade progressiva a fim de ser evitarem
+                                    aderências intra-músculares.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal2">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Quadril <span
+                                    class="amarelo">]</span></h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+                                <p>
+                                    O quadril é uma articulação do tipo bola e soquete, na qual a cabeça do fêmur,
+                                    esférica, se relaciona com a cavidade da bacia, o acetábulo, que tem a forma
+                                    côncava. Quando existe qualquer alteração no formato da cabeça ou do acetábulo
+                                    haverá um impacto entre essas partes, o que irá provocar a destruição da cartilagem
+                                    articular e a conseqüente artrose.
+                                    <br><br>
+                                    O labrum é uma espécie de moldura que reveste as bordas da cavidade acetabular da
+                                    bacia e a mantém firmemente articulada à cabeça femoral. Além disso ele, juntamente
+                                    com a cápsula e os ligamentos que a envolvem, fecham hermeticamente a junta,
+                                    permitindo que o fluido sinovial circule em seu interior e a lubrifique. Quando há
+                                    lesão do labrum por traumatismos agudos ou repetitivos, ocorre o extravasamento do
+                                    líquido com inflamação e liberação de substâncias químicas que irão causar danos à
+                                    cartilagem articular. A estrutura fibrocartilaginosa do labrum serve de amortecedor
+                                    para o impacto a que o quadril é submetido durante as atividades físicas e
+                                    desportivas. Por circundar toda a articulação na parte superior e unindo-se ao
+                                    ligamento transverso na parte inferior, o labrum é um componente de suma
+                                    importância, juntamente com o ligamento ílio-femoral anterior, a cápsula articular e
+                                    as demais estruturas estabilizadoras.
+                                    <br><br>
+                                    Esportes de impacto, como artes marciais (tae-kwon-do, jiu-jitsu, judô, capoeira),
+                                    corridas de longa distância ou 100m rasos, tênis, golfe, balé e futebol, quando
+                                    realizados por pessoa que apresentam uma predisposição anatômica (defeito na
+                                    formação do quadril) podem vir a sofrer da síndrome do impacto.
+                                    <br><br>
+                                    A partir da década de oitenta pesquisas médicas demonstraram que o impacto repetido
+                                    da articulação coxo-femoral pode provocar uma lesão do labrum e da cartilagem
+                                    próxima e causar um efeito degenerativo progressivo da junta por alterações
+                                    bioquímicas.
+                                    <br><br>
+                                    Um desses pesquisadores, Reinhold Ganz, no início de 2001, definiu os tipos de
+                                    alterações genéticas que predispõem à síndrome do impacto, subdividindo-os em dois
+                                    grupos principais que, em alguns casos, podem até acontecer simultaneamente. São
+                                    eles o impacto tipo Pincer, mais comum em mulheres, onde existe uma retroversão do
+                                    acetábulo, que se posiciona virado para trás e não para frente, como deveria ser.
+                                    <br><br>
+                                    Já nos homens a síndrome do impacto costuma ter como causa um defeito na conformação
+                                    da cabeça femoral que, em vez de esférica , apresenta-se mais ovalada. Quando o
+                                    paciente realiza um movimento combinado de flexão (dobrar) do quadril, adução
+                                    (juntar as coxas) e rotação interna, ocorre um contato brusco entre a parte
+                                    defeituosa da cabeça e o labrum. A repetição desse movimento acaba por provocar uma
+                                    lesão no quadril, caracterizada por dor e dificuldade de movimentos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal3">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Joelho <span class="amarelo">]</span>
+                            </h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+                                <p>
+                                    Em esportes que impões muito impacto nos joelhos, especialmente forças de torção, é
+                                    comum o rompimento de um ou mais ligamentos ou cartilagens do joelho. O ligamento
+                                    cruzado anterior é frequentemente rompido como um resultado de uma rápida mudança na
+                                    direção durante uma corrida ou como um resultado de algum outro tipo de movimento de
+                                    torção violento. Ele também pode ser rompido com a extensão forçada além de sua
+                                    amplitude normal, ou como resultado de forças sendo aplicadas lateralmente.
+                                    <br><br>
+                                    As lesões ligamentares podem ocorrer como um resultado da força que faz com que a
+                                    articulação exceda sua amplitude de movimento (ADM) normal. Uma pancada no aspecto
+                                    lateral da articulação do joelho ou da tíbia pode causar um estresse em valgo que
+                                    resulta no rompimento dos ligamentos impedindo movimento em valgo. Da mesma forma a
+                                    hiperextensão forçada do joelho pode causar rompimento dos ligamentos posteriores.
+                                    Embora forças excessivas possam causar rupturas ligamentares, força de baixa
+                                    magnitude
+                                    pode também causar rompimentos em ligamentos enfraquecidos pela idade, doença,
+                                    imobilização, esteróides ou insuficiência vascular. Devido a esses problemas, um
+                                    fortalecimento dos músculos desta complexa articulação, com a devida orientação
+                                    postural, fará com que as pessoas sejam cautelosas e mais seguras na prática dos
+                                    esportes tais como futebol, basquete e atletismo.
+                                    <br><br>
+                                    Antes do advento da artroscopia, os pacientes que faziam cirurgia para um LCA
+                                    necessitavam de pelo menos nove meses de reabilitação. Com as técnicas atuais de
+                                    reconstrução do LCA, estes pacientes podem hoje estar caminhando sem dificuldades em
+                                    duas semanas, e praticando esportes em poucos meses.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal4">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Tornozelo <span
+                                    class="amarelo">]</span></h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+
+                                <p>
+                                    Em anatomia, chama-se tornozelo, tibio-társica à articulação entre a perna e o pé
+                                    dos mamíferos e, em geral, de muitos vertebrados tetrápodes.
+                                    <br><br>
+                                    O tornozelo é uma estrutura formada pela união de três ossos: tíbia, fíbula e tálus.
+                                    Sabemos também que existem inúmeras articulações e apenas três apresentam um papel
+                                    importante na função biomecânica, que são: talocrural, subtalar e tibiofibular
+                                    (Gould, 1993).
+                                    <br><br>
+                                    Estrutura
+                                    <br><br>
+                                    Articulação talocrural - formada pela extremidade inferior da tíbia e fíbula com o
+                                    dorso do tálus.
+                                    Articulação subtalar - entre o tálus e o calcâneo.
+                                    Articulação tibiofibular - formada pela extremidade inferior da tíbia e da fíbula.
+                                    <br><br>
+                                    Partes moles
+                                    <br><br>
+                                    A estabilidade do tornozelo se dá através de ligamentos, que são:
+                                    <br><br>
+                                    Ligamento colateral medial: tem origem no maléolo tibial e inserção nos ossos
+                                    navicular , tálus e calcâneo, são eles: tibiotalar anterior e posterior,
+                                    tibiocalcâneo e tibionavicular, que juntos formam o forte ligamento deltóide.
+                                    Ligamento colateral lateral: tem origem no maléolo fibular e inserção nos ossos
+                                    tálus e calcâneo; são eles: talofibular anterior e posterior e calcaneofibular.
+                                    Sindesmose tibiofibular: Tem origem na tíbia e insersão na fíbula; são eles:
+                                    tibiofibular anterior e posterior e interósseos.
+                                    <br><br>
+                                    Os principais ligamentos lesados no mecanismo de inversão de uma entorse de
+                                    tornozelo são: talofibuar anterior e posterior e calcaneofibular.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal5">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Ombro <span class="amarelo">]</span>
+                            </h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+
+                                <p>
+                                    O ombro é a articulação complexa entre o braço (ou membro superior) e a cintura
+                                    escapular, ou seja, a estrutura do tórax dos vertebrados constituída pela clavícula
+                                    e pela escápula.
+                                    <br><br>
+                                    No entanto, o ombro é formado por quatro articulações separadas e por um complexo de
+                                    músculos. As articulações são:
+                                    <br><br>
+                                    • a articulação glenoumeral, que consiste no encaixe da “cabeça” do úmero na
+                                    cavidade glenóide da omoplata; <br>
+                                    • a articulação acromioclavicular, que liga a clavícula à apófise acromial da
+                                    escápula;<br>
+                                    • a articulação esternoclavicular, entre a clavícula e o esterno;<br>
+                                    • as ligações da escápula com os músculos da coluna torácica e cervical.<br><br>
+                                    Os músculos que fazem mover o braço são:
+                                    <br><br>
+                                    • o peitoral, rotador interno do braço;<br>
+                                    • o trapézio, que eleva a escápula;<br>
+                                    • o deltóide, realiza elevação e abdução do braço;<br>
+                                    • o grande dorsal, auxilia na inferiorização do braço e rotação externa.<br><br>
+                                    Na ligação entre o ombro e o pescoço, existe um espaço triangular entre os músculos
+                                    peitoral e o deltóide, com base na clavícula – a “saboneteira” – por onde passa a
+                                    veia cefálica para se juntar com a veia axilar.
+                                    <br><br>
+                                    O deltóide, cobrindo a cabeça do úmero, em conjunto com um conjunto de músculos
+                                    menores, é que formam a proeminência do ombro e impedem que esta articulação se
+                                    desloque (luxação).
+                                    <br><br>
+                                    O peitoral forma a parte anterior da axila, enquanto que a posterior é formada pelos
+                                    músculos grande dorsal e “redondo maior”. Os vasos sanguíneos axilares e o plexo
+                                    braquial de nervos atravessa esta região.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal6">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Cotovelo <span
+                                    class="amarelo">]</span></h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+
+                                <p>
+                                    A tendinite de cotovelo (processo inflamatório do tendão que se insere na região do
+                                    cotovelo) possue em esportes como o tênis, o golfe, o beisebol, o squash e o
+                                    boliche, seu publico alvo.
+                                    <br><br>
+                                    TENIS ELBOW - conhecida também como epicondilite de tenista ou epicondilite lateral,
+                                    via de regra, é resultante de movimentação errada. No tênis, ocorre quando do
+                                    backhand ou revés errado (movimento travado), podendo ainda ocorrer por
+                                    encordoamento inadequado da raquete, mal empunhadura da mesma ou calibre errado do
+                                    cabo (grip).
+                                    <br><br>
+                                    O diagnóstico desta alteração é eminentemente clínico e baseia-se tanto na história
+                                    quanto no exame clínico, podendo, às vezes, ser o complementado por um estudo
+                                    ultrasonográfico.
+                                    <br><br>
+                                    Por se manifestar como uma alteração inflamatória que envolve o tendão da
+                                    musculatura extensora comum dos dedos e do punho, em sua fase aguda é ela bastante
+                                    incapacitante, visto que, esta musculatura, participa de praticamente todos os
+                                    movimentos de MMSS (membros superiores) durante o dia a dia. Atividades simples tais
+                                    como escovar os dentes, pegar uma xícara de café, carregar uma pasta, abrir uma
+                                    maçaneta de porta, escrever, pentear os cabelos, utilizam estes grupos musculares.
+                                    <br><br>
+                                    Esta mesma patologia acomete outros grupos como os jogadores de boliche, as donas de
+                                    casa que têm por hábito torcer roupas pesadas, jogadores de pebollin, eletricistas,
+                                    mecânicos etc.
+                                    <br><br>
+                                    Por ser uma patologia secundária à um esforço anormal, seu tratamento se apóia,
+                                    primeiramente, no repouso dos grupos musculares acometidos, seguido de métodos
+                                    antiinflamatórios e de uma faixa de descarga cuja finalidade é diminuir a alavanca
+                                    na origem dos tendões acometidos
+                                    <br><br>
+                                    EPITROCLEITE - conhecida também como tendinite de golfista, acomete ela a face
+                                    interna do cotovelo (epitróclea). É ela resultante de esforços como o de segurar o
+                                    taco com muita força, movimento anormal de swing, impacto quando o taco atinge ao
+                                    mesmo tempo a bola e o solo ou da repetição excessiva de jogadas para sair de um
+                                    "stand trap". O tendão que está acometido nesta alteração é o da musculatura flexora
+                                    dos dedos e do punho na sua inserção no cotovelo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal7">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Punho <span class="amarelo">]</span>
+                            </h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+
+                                <p>As tendinites e tenossinovites de mão e punho podem ter diversas etiologas. Doenças reumatológias, distúrbios metabólicos, tumores, doenças infecciosas e traumas são os responsáveis por estas alterações. Quando resultantes de micro traumatismos de repetição ou macro traumas, são elas enquadradas como LER (lesões por esforços repetitivos) que, uma vez identificadas como sendo secundários a esforços realizados no trabalho, são diagnosticadas como DORT (doença osteo articular relacionada ao trabalho).
+                                    <br><br>
+                                    LER e DORT podem ser situações diferentes, dependendo do estímulo gerador. Vale ressaltar que a grande maioria das LERs não são DORTs
+                                    <br><br>
+                                    Tendinite ou tenossinovite do polegar
+                                    <br><br>
+                                    Também chamada de tendinite de DE QUERVAIN, consiste ela de um processo inflamatório que acomete os tendões do abdutor longo e extensor curto do polegar que, ao passar por um túnel formado pela epífise do radio em sua parte inferior, pela apófise da estilóde radial e pelo ligamento posterior do carpo sofre, um processo inflamatório. Geralmente é resultante de um excesso de movimento com o punho em situação não fisiológica, com um desvio ulnar, radial ou em flexão. Das alterações que acometem o punho, é ela a mais freqüente em esportistas podendo, no entanto, ocorrer em patologias sistêmicas, na gravidez ou ainda, secundariamente a esforços repetitivos. Dentre os esportes que causam esta lesão, podemos citar o tênis de mesa, o esgrima, o pebollin, a musculação e os exercícios localizados com peso como os principais causadores desta afecção.
+                                    <br><br>
+                                    Tendinite ou tenossinovite digital estenosante
+                                    <br><br>
+                                    Também chamada de dedo em gatilho, é uma doença inflamatória bastante comum em donas de casa. Observamos nesta doença uma nodosidade que resulta de uma fibrose tendínea na primeira polia anelar, próxima da articulação metacarpo falangeana. Via de regra secundária à macro trauma localizado, é comum em donas de casa que possuem o hábito de carregar sacolinhas de super mercado onde o excesso de peso forma uma zona de pressão localizada.
+                                    <br><br>
+                                    Dentre os locais acometidos, é mais comumente encontrada no tendão flexor do 4o. e 3o dedo. O nome dedo em gatilho vem do fato de no movimento de extensão do dedo, o espessamento ou nódulo tendíneo dificultar a passagem do tendão pela sua polia correspondente, causando um sobre salto. Quando isto ocorre assemelhando-se ao disparo do gatilho do revólver.
+                                    <br><br>
+                                    Tendinites dos extensores e flexores dos dedos e punhos
+                                    <br><br>
+                                    Bastante comum em atividades esportivas que utilizam raquetes e bastões, resultam, quase sempre, de um excesso de solicitação da musculatura envolvida no movimento. Encontrada também em donas de casa que executam suas tarefas habituais, possue como seu grande mito a profissão de digitadores como sendo os indivíduos mais acometidos. São as tendinites destes grupos musculares também secundárias a patologias sistêmicas, alterações hormonais, processos infecciosos e mesmo, estados fisiológicos como a gravidez. O encontro do fator desencadeante é de primordial importância no tratamento desta lesão que, por regra, responde bem ao repouso e uso de medicamentos e métodos anti inflamatórios.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal8">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title"><span class="amarelo">[</span> Pescoço <span
+                                    class="amarelo">]</span></h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="espaco">
+
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia officia
+                                    numquam
+                                    laudantium
+                                    ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad voluptatibus
+                                    veniam,
+                                    doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at obcaecati
+                                </p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia officia
+                                    numquam
+                                    laudantium
+                                    ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad voluptatibus
+                                    veniam,
+                                    doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at obcaecati
+                                </p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia officia
+                                    numquam
+                                    laudantium
+                                    ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad voluptatibus
+                                    veniam,
+                                    doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at obcaecati
+                                </p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia officia
+                                    numquam
+                                    laudantium
+                                    ex dolorum. Quo aliquid distinctio similique eum unde ullam dicta, ad voluptatibus
+                                    veniam,
+                                    doloremque, mollitia nisi minima. Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque at obcaecati
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- abrir duvidas -->
+        <div id="interrogacao">
+            <a href="#">
+                <h1 class="py-md-2 px-4">?</h1>
+            </a>
+        </div>
+
+        <div id="interrogacao2">
+            <a href="duvidas.html">
+                <h1 class="py-md-2 px-4"><small>Dúvidas? Clique aqui!</small> </h1>
+            </a>
+        </div>
+
+        <footer>
+            <div id="footerEsquerda">
+                <h5 style="color: #da9f2e;">[ Mapa de Site ]</h5>
+                <ul>
+                    <li>
+                        <a href="index.html">Home </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre Mim</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Fisioterapia</a>
+                        <ul>
+                            <li><a href="tratamentos.html">Serviços</a></li>
+                            <li><a href="lesoes.html">Lesões</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="duvidas.html">Dúvidas</a>
+                    </li>
+                </ul>
+                <br>
+                <a href="#topo">
+                    <h6><span class="amarelo">[</span> Voltar ao topo <span class="amarelo">]</span></h6>
+                </a>
+
+            </div>
+
+            <div id="footerCentro">
+                <img src="imagens/logoBranca2.png" alt="">
+                <div>
+                    <h5>[ Endereço ]</h5>
+                    <p>R. Cel. Wenceslau Soares, Centro</br>
+                        Ibiapina / CE, Brasil </p>
+                    <h6>[ Telefone ]</h6>
+                    <p>+55 88 99801.4042</p>
+
+                </div>
+                <hr>
+                <div id="footerCopy">
+                    <p>Copyright © - Todos direitos reservados - 2021</p>
+                    <p><a href="https://br.freepik.com/fotos/saude" target="_blank">Fotos por freepik</a></p>
+                </div>
+            </div>
+
+            <div id="footerDireita">
+                <a id="facebook" href="https://www.facebook.com/Matheus-Freire-113189996720479/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook "
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <br>
+                <a id="instagram" href="https://instagram.com/matheus.freirec?igshid=5fr1i0e4ymd6" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+                <br>
+                <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5588998014042" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    </svg>
+                </a>
+                <br>
+                <div>
+                    <img src="imagens/qrcode.PNG" style="width: 80px;" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/307fa8ce97.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).on("scroll", function () {
+            if ($(document).scrollTop() > 0) {
+                $("header").removeClass("large").addClass("small");
+                $("#logo").removeClass("large").addClass("small");
+            } else {
+                $("header").removeClass("small").addClass("large");
+                $("#logo").removeClass("small").addClass("large");
+            }
+        });
+
+        $(function () {
+            $("#interrogacao").mouseover(function () {
+                $("#interrogacao2").show(100);
+            });
+
+            $("#interrogacao2").mouseout(function () {
+                $("#interrogacao2").hide(100);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
